@@ -1,0 +1,27 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .dashboard-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .dashboard-link:hover {
+    background-color: #0056b3;
+  }
+  
+  .dashboard-item {
+    width: 45%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  

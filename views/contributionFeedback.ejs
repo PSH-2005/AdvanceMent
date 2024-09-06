@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribution Feedback</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contribution Feedback</h1>
+  </header>
+
+  <div class="container">
+    <form action="/analysis/analyze" method="POST">
+      <div class="form-group">
+        <label for="contribution">Your Contribution:</label>
+        <textarea name="contribution" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Analyze</button>
+    </form>
+
+    <% if (typeof analysis !== 'undefined') { %>
+      <h3>Feedback Analysis:</h3>
+      <p><%= analysis %></p>
+    <% } %>
+
+    <p><a href="/dashboard">Back to Dashboard</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; Mentor-Mentee Platform 2024</p>
+  </footer>
+</body>
+</html>

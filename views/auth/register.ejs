@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mentor-Mentee Platform</h1>
+  </header>
+
+  <div class="container">
+    <h2>Register</h2>
+
+    <form action="/register" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password2">Confirm Password:</label>
+        <input type="password" name="password2" required>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="/login">Login here</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; Mentor-Mentee Platform 2024</p>
+  </footer>
+</body>
+</html>
